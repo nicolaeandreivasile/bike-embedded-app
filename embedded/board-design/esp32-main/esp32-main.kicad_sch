@@ -2001,6 +2001,88 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "Power_Management:BD48ExxG"
 			(pin_names
 				(offset 1.016)
@@ -5923,6 +6005,134 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 19.05 190.5 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38d41241-7ecb-4083-b104-c187375e99dc")
+		(property "Reference" "H3"
+			(at 21.59 189.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 21.59 191.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 19.05 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 19.05 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 19.05 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "esp32-main"
+				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 19.05 184.15 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4025175e-8a6b-445a-8c8a-b73180accc5f")
+		(property "Reference" "H1"
+			(at 21.59 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 21.59 185.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 19.05 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 19.05 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 19.05 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "dk_Tactile-Switches:1825910-6")
 		(at 116.84 177.8 270)
 		(unit 1)
@@ -6160,6 +6370,134 @@
 			(project "esp32-main"
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 44.45 184.15 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "54ef50a6-2bf0-4ec7-9e75-09909e35e710")
+		(property "Reference" "H2"
+			(at 46.99 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 46.99 185.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 44.45 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 44.45 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "esp32-main"
+				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 44.45 190.5 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "558a8465-632f-4a6b-bd29-d4f375a268ca")
+		(property "Reference" "H4"
+			(at 46.99 189.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 46.99 191.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 44.45 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 44.45 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "esp32-main"
+				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -7053,6 +7391,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x08_Socket")
+		(at 182.88 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7aa4d667-be52-4425-affb-22bbe364faf3")
+		(property "Reference" "J2"
+			(at 184.15 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x08_Socket"
+			(at 184.15 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MC_1,5_8-G-3.81_1x08_P3.81mm_Horizontal"
+			(at 182.88 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated"
+			(at 182.88 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "415622c5-4091-4039-be41-ecd20ea4aea1")
+		)
+		(pin "5"
+			(uuid "215ee568-ac14-41f0-95d2-3c6477860a7b")
+		)
+		(pin "4"
+			(uuid "ce1dccbc-fe58-4979-9f10-184f64b02b73")
+		)
+		(pin "3"
+			(uuid "a9ac14b3-0bd7-41ec-ad75-cf8ae3e0deb9")
+		)
+		(pin "7"
+			(uuid "2ff781a1-1345-4bdc-b509-140887feb510")
+		)
+		(pin "1"
+			(uuid "be59d724-5d35-4049-94ea-fd95f68a40bc")
+		)
+		(pin "6"
+			(uuid "9d4c045d-6c7e-446b-8cae-acd87d9c38f9")
+		)
+		(pin "2"
+			(uuid "12b44a00-5fe7-4736-abb4-057eb0ffe0b3")
+		)
+		(instances
+			(project ""
+				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 254 25.4 0)
 		(unit 1)
@@ -7694,6 +8120,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x08_Socket")
+		(at 246.38 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a030253-6446-4271-8d12-57a86f6a55d8")
+		(property "Reference" "J3"
+			(at 247.65 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x08_Socket"
+			(at 247.65 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MC_1,5_8-G-3.81_1x08_P3.81mm_Horizontal"
+			(at 246.38 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated"
+			(at 246.38 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "123523c7-d40b-4041-af8b-1b5e8f715b26")
+		)
+		(pin "5"
+			(uuid "32993166-661c-4323-9b7c-dd0f481d0418")
+		)
+		(pin "4"
+			(uuid "8301bfab-158f-4404-af53-4baeba468163")
+		)
+		(pin "3"
+			(uuid "8a72ec89-8034-4c5f-89ba-664695ed157a")
+		)
+		(pin "7"
+			(uuid "38cf1077-7a55-4264-b60f-4f1a76506221")
+		)
+		(pin "1"
+			(uuid "663b39df-b337-4ec2-8348-67e5bc54c486")
+		)
+		(pin "6"
+			(uuid "4258b2c8-b8f2-4f12-ad88-03f0d558098e")
+		)
+		(pin "2"
+			(uuid "3a23e710-77dd-4fff-b9b1-633cb2421292")
+		)
+		(instances
+			(project "esp32-main"
+				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 43.18 35.56 0)
 		(unit 1)
@@ -7857,103 +8371,6 @@
 			(project ""
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x08_Socket")
-		(at 246.38 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b1af87a1-a3a1-418a-aadf-b4f6f81c8579")
-		(property "Reference" "J3"
-			(at 247.65 147.3199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x08_Socket"
-			(at 247.65 149.8599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_8-G-3.81_1x08_P3.81mm_Vertical"
-			(at 246.38 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 246.38 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 246.38 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 246.38 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6b49029b-191b-4816-bfd5-82517ee73e54")
-		)
-		(pin "2"
-			(uuid "cec3a3b6-e519-4035-97c9-041402ceec07")
-		)
-		(pin "8"
-			(uuid "f7142923-0d09-49cc-bd35-64cebc91e263")
-		)
-		(pin "5"
-			(uuid "1e350484-d0aa-4421-bc19-4a4131b42fb3")
-		)
-		(pin "4"
-			(uuid "143fe6c3-0a2e-4383-b501-db94e8d6393f")
-		)
-		(pin "3"
-			(uuid "cb411e7b-4faa-4bc9-8751-48cad1bd7b4b")
-		)
-		(pin "6"
-			(uuid "4ad70faa-985e-47d9-b4c7-6a95b155eb2f")
-		)
-		(pin "7"
-			(uuid "47b4f5f1-37b0-45d1-bf06-14c44d8cd879")
-		)
-		(instances
-			(project "esp32-main"
-				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4"
-					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -8186,103 +8603,6 @@
 			(project "esp32-main"
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x08_Socket")
-		(at 182.88 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d32a7313-4a22-4acf-a313-67ebf35dbfa4")
-		(property "Reference" "J2"
-			(at 184.15 147.3199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x08_Socket"
-			(at 184.15 149.8599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_8-G-3.81_1x08_P3.81mm_Vertical"
-			(at 182.88 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 182.88 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 182.88 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 182.88 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "94aa5080-2ba6-4274-94cb-50519b499199")
-		)
-		(pin "2"
-			(uuid "f7915c2b-4d26-4ec4-8895-b253d9e84e11")
-		)
-		(pin "8"
-			(uuid "0093fcc9-3183-4d5d-8c16-1cf960c98a7f")
-		)
-		(pin "5"
-			(uuid "40a658d2-fd03-480e-b686-c7155e2eab87")
-		)
-		(pin "4"
-			(uuid "7a779c63-160a-4d04-a7c5-c32848f5033d")
-		)
-		(pin "3"
-			(uuid "25bbacef-2bf9-4902-9bb1-756b2f97d685")
-		)
-		(pin "6"
-			(uuid "e698bdb8-bead-40ba-ae12-1f7249bb1c3d")
-		)
-		(pin "7"
-			(uuid "c74b89a2-cf6a-4e87-8401-88a02b7c3728")
-		)
-		(instances
-			(project ""
-				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4"
-					(reference "J2")
 					(unit 1)
 				)
 			)
