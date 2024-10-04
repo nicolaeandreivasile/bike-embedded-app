@@ -4,6 +4,13 @@
 	(generator_version "8.0")
 	(uuid "72a0942f-d8dd-46e1-be20-bcec4401f098")
 	(paper "A4")
+	(title_block
+		(title "ESP32 embedded application")
+		(date "2024-10-04")
+		(rev "A")
+		(comment 1 "Author: Nicolae-Andrei Vasile")
+		(comment 2 "ESP32 embedded hardware application.")
+	)
 	(lib_symbols
 		(symbol "Battery_Management:LTC4054ES5-4.2"
 			(exclude_from_sim no)
@@ -1697,149 +1704,6 @@
 				)
 			)
 		)
-		(symbol "power:Earth_Protective"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "Earth_Protective"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"Earth_Protective\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global ground gnd clean"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Earth_Protective_0_1"
-				(circle
-					(center 0 -3.81)
-					(radius 2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 -4.445) (xy 0.635 -4.445)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.127 -5.08) (xy 0.127 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -3.81) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -3.81) (xy -1.27 -3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Earth_Protective_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -2106,6 +1970,12 @@
 		(uuid "bd7f77b7-7c7c-46cb-a4c8-40c5932a4933")
 	)
 	(junction
+		(at 220.98 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c044f53c-2a6a-49a4-974d-b4082a566939")
+	)
+	(junction
 		(at 111.76 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2153,13 +2023,23 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 101.6) (xy 195.58 101.6)
+			(xy 223.52 101.6) (xy 220.98 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0863e2f7-4da6-405f-9c86-981366f3793a")
+	)
+	(wire
+		(pts
+			(xy 220.98 101.6) (xy 203.2 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d0b9834-ac2e-4439-8ee3-a6e1c9225403")
 	)
 	(wire
 		(pts
@@ -2190,6 +2070,16 @@
 			(type default)
 		)
 		(uuid "2dabe59d-7b7d-4733-871d-092c2d253afb")
+	)
+	(wire
+		(pts
+			(xy 220.98 101.6) (xy 220.98 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31b61aa6-3d7a-42c9-b824-bfa4a27156cb")
 	)
 	(wire
 		(pts
@@ -2233,16 +2123,6 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 104.14) (xy 213.36 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "403ab565-b61b-4795-ba21-ae63b203a726")
-	)
-	(wire
-		(pts
 			(xy 115.57 69.85) (xy 115.57 73.66)
 		)
 		(stroke
@@ -2283,7 +2163,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 104.14) (xy 215.9 104.14)
+			(xy 220.98 104.14) (xy 223.52 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2293,7 +2173,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 99.06) (xy 215.9 99.06)
+			(xy 203.2 99.06) (xy 223.52 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2323,7 +2203,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 101.6) (xy 195.58 106.68)
+			(xy 203.2 101.6) (xy 203.2 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2361,6 +2241,16 @@
 		)
 		(uuid "7e3a5add-189e-4ad0-bc76-26b9e15a3110")
 	)
+	(polyline
+		(pts
+			(xy 254 114.3) (xy 254 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81be2595-ecb0-4268-8ecd-4e5bf7c74ba1")
+	)
 	(wire
 		(pts
 			(xy 101.6 134.62) (xy 111.76 134.62)
@@ -2390,6 +2280,16 @@
 			(type default)
 		)
 		(uuid "8b0e225d-f07b-468f-8c34-061068aa3b33")
+	)
+	(polyline
+		(pts
+			(xy 190.5 88.9) (xy 254 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dd26280-ec0d-4093-830d-ae972ed27edf")
 	)
 	(wire
 		(pts
@@ -2521,6 +2421,16 @@
 		)
 		(uuid "be4b7fe0-e6ab-4e84-856c-6a812451cf1c")
 	)
+	(polyline
+		(pts
+			(xy 190.5 114.3) (xy 254 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3877c28-0dd5-44a4-a9d3-13abed870f19")
+	)
 	(wire
 		(pts
 			(xy 111.76 121.92) (xy 114.3 121.92)
@@ -2611,6 +2521,16 @@
 		)
 		(uuid "f0eaf312-b89d-4ae8-870f-1e078099e63a")
 	)
+	(polyline
+		(pts
+			(xy 190.5 88.9) (xy 190.5 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9485576-af6a-41a7-9ec9-dadfa694ead7")
+	)
 	(wire
 		(pts
 			(xy 111.76 132.08) (xy 111.76 134.62)
@@ -2631,8 +2551,18 @@
 		)
 		(uuid "ff8e8e0f-3007-4bd8-ac11-b042bfe7f0f2")
 	)
+	(text "ALT - 5V MAX!"
+		(exclude_from_sim no)
+		(at 199.39 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "dcc77de7-3efc-4714-b878-3e8a43a965a7")
+	)
 	(label "ALT"
-		(at 195.58 99.06 0)
+		(at 203.2 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2770,6 +2700,51 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 77.47 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 77.47 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 77.47 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 77.47 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 77.47 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "cf2950bd-54b9-40a3-8d3b-c0c52cb6a9d2")
 		)
@@ -2846,6 +2821,51 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 101.6 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 101.6 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 101.6 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 101.6 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 101.6 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e950befa-980b-4737-8d28-69566fee673f")
 		)
@@ -2856,72 +2876,6 @@
 			(project "esp32-main"
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4/9cfdfa29-fef4-49c3-96a5-094ec94d9453"
 					(reference "R22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth_Protective")
-		(at 213.36 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "21a23146-da76-4fbb-92e7-f587852c45d4")
-		(property "Reference" "#PWR029"
-			(at 213.36 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth_Protective"
-			(at 213.36 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 213.36 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 213.36 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth_Protective\""
-			(at 213.36 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a4c1872b-0320-4336-8d35-d5a5b8098b79")
-		)
-		(instances
-			(project "esp32-main"
-				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4/9cfdfa29-fef4-49c3-96a5-094ec94d9453"
-					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -2980,6 +2934,51 @@
 			)
 		)
 		(property "Price" ""
+			(at 77.47 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 77.47 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 77.47 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 77.47 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 77.47 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 77.47 99.06 0)
 			(effects
 				(font
@@ -3060,6 +3059,51 @@
 			)
 		)
 		(property "Price" ""
+			(at 69.85 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 69.85 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 69.85 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 69.85 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 69.85 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 69.85 86.36 0)
 			(effects
 				(font
@@ -3149,6 +3193,51 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 115.57 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 115.57 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 115.57 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 115.57 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 115.57 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d8bf0eb5-db34-42ab-8e1b-f10a6a7d5125")
 		)
@@ -3174,7 +3263,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f618ea5-2ea3-4f9b-b49c-d0688b315f6e")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR020"
 			(at 101.6 71.12 0)
 			(effects
 				(font
@@ -3224,7 +3313,7 @@
 		(instances
 			(project ""
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4/9cfdfa29-fef4-49c3-96a5-094ec94d9453"
-					(reference "#PWR026")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -3240,7 +3329,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "55a33821-2c21-4cdf-8a91-75732ef558ee")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR023"
 			(at 127 143.51 0)
 			(effects
 				(font
@@ -3290,7 +3379,7 @@
 		(instances
 			(project "esp32-main"
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4/9cfdfa29-fef4-49c3-96a5-094ec94d9453"
-					(reference "#PWR030")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -3363,6 +3452,51 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 104.14 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 104.14 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 104.14 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 104.14 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 104.14 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "a983272c-eb51-40ca-9a42-30e6680f2fba")
 		)
@@ -3383,7 +3517,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 195.58 106.68 0)
+		(at 203.2 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3391,8 +3525,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "720c1ffd-6b8b-4e4a-9199-e199535292e3")
-		(property "Reference" "#PWR028"
-			(at 195.58 113.03 0)
+		(property "Reference" "#PWR022"
+			(at 203.2 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3401,7 +3535,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 195.58 111.76 0)
+			(at 203.2 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3409,7 +3543,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 195.58 106.68 0)
+			(at 203.2 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3418,7 +3552,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 106.68 0)
+			(at 203.2 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3427,7 +3561,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 195.58 106.68 0)
+			(at 203.2 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3441,7 +3575,7 @@
 		(instances
 			(project "esp32-main"
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4/9cfdfa29-fef4-49c3-96a5-094ec94d9453"
-					(reference "#PWR028")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -3508,6 +3642,51 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 58.42 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 58.42 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 58.42 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 58.42 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 58.42 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8608d1ab-48be-442a-918e-8bb7a803fff5")
 		)
@@ -3533,7 +3712,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89e6f36b-57e7-4d62-bfa9-32710fcc7fb1")
-		(property "Reference" "#FLG05"
+		(property "Reference" "#FLG04"
 			(at 131.445 69.85 0)
 			(effects
 				(font
@@ -3584,7 +3763,7 @@
 		(instances
 			(project ""
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4/9cfdfa29-fef4-49c3-96a5-094ec94d9453"
-					(reference "#FLG05")
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -3653,6 +3832,51 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 110.49 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 110.49 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 110.49 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 110.49 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 110.49 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "93f0d409-363b-4155-9ca5-ee0ba005147e")
 		)
@@ -3678,7 +3902,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da7f5430-d799-4215-975e-7100ffa0f8b0")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR021"
 			(at 110.49 92.71 0)
 			(effects
 				(font
@@ -3728,7 +3952,7 @@
 		(instances
 			(project "esp32-main"
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4/9cfdfa29-fef4-49c3-96a5-094ec94d9453"
-					(reference "#PWR027")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -3736,7 +3960,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x03_Socket")
-		(at 220.98 101.6 0)
+		(at 228.6 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3745,7 +3969,7 @@
 		(fields_autoplaced yes)
 		(uuid "df70a73a-9a5f-44d1-99ab-5acde86436c9")
 		(property "Reference" "J5"
-			(at 222.25 100.3299 0)
+			(at 229.87 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3754,7 +3978,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03_Socket"
-			(at 222.25 102.8699 0)
+			(at 229.87 102.8699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3763,7 +3987,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MC_1,5_3-G-3.81_1x03_P3.81mm_Horizontal"
-			(at 220.98 101.6 0)
+			(at 228.6 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3772,7 +3996,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 220.98 101.6 0)
+			(at 228.6 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3781,7 +4005,52 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 220.98 101.6 0)
+			(at 228.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 228.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 228.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 228.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 228.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 228.6 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3860,6 +4129,51 @@
 			)
 		)
 		(property "Price" ""
+			(at 127 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 127 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 127 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 127 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 127 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 127 101.6 0)
 			(effects
 				(font
@@ -3953,6 +4267,51 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 111.76 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 111.76 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 111.76 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 111.76 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 111.76 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "45ca2874-8c09-49c6-8523-d7565bf654f8")
 		)
@@ -4024,6 +4383,51 @@
 			)
 		)
 		(property "Price" ""
+			(at 139.7 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 139.7 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 139.7 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 139.7 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 139.7 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 139.7 116.84 0)
 			(effects
 				(font
@@ -4108,6 +4512,51 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 101.6 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 101.6 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 101.6 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 101.6 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 101.6 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3514c7e6-6c1e-4c64-b628-e05eaf25f618")
 		)
@@ -4176,6 +4625,51 @@
 			)
 		)
 		(property "Price" ""
+			(at 101.6 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 101.6 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 101.6 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 101.6 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 101.6 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 101.6 87.63 0)
 			(effects
 				(font
