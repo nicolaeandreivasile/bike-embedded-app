@@ -479,7 +479,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "esp_main_fabric",
+      "plot": "esp_main_gerbers",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
