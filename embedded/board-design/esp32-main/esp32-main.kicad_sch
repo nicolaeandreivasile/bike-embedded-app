@@ -3069,16 +3069,16 @@
 		(uuid "f83bdab4-03cf-4dfa-9e7e-41158922a64e")
 	)
 	(no_connect
-		(at 190.5 152.4)
+		(at 190.5 151.13)
 		(uuid "46fa7644-e447-425c-b3b4-05c3bc1d641b")
 	)
 	(no_connect
-		(at 190.5 154.94)
+		(at 190.5 153.67)
 		(uuid "4be5220d-fdd1-48f5-a775-7c6017bd8c31")
 	)
 	(polyline
 		(pts
-			(xy 165.1 127) (xy 165.1 165.1)
+			(xy 165.1 127) (xy 165.1 160.02)
 		)
 		(stroke
 			(width 0)
@@ -3308,7 +3308,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 142.24) (xy 203.2 142.24)
+			(xy 177.8 140.97) (xy 203.2 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3438,7 +3438,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 149.86) (xy 250.19 149.86)
+			(xy 237.49 148.59) (xy 250.19 148.59)
 		)
 		(stroke
 			(width 0)
@@ -3498,7 +3498,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 152.4) (xy 250.19 152.4)
+			(xy 237.49 151.13) (xy 250.19 151.13)
 		)
 		(stroke
 			(width 0)
@@ -3508,7 +3508,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 154.94) (xy 250.19 154.94)
+			(xy 237.49 153.67) (xy 250.19 153.67)
 		)
 		(stroke
 			(width 0)
@@ -3548,7 +3548,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 154.94) (xy 203.2 154.94)
+			(xy 190.5 153.67) (xy 203.2 153.67)
 		)
 		(stroke
 			(width 0)
@@ -3568,7 +3568,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 147.32) (xy 203.2 147.32)
+			(xy 177.8 146.05) (xy 203.2 146.05)
 		)
 		(stroke
 			(width 0)
@@ -3648,7 +3648,7 @@
 	)
 	(polyline
 		(pts
-			(xy 279.4 50.8) (xy 279.4 12.7)
+			(xy 279.4 46.99) (xy 279.4 17.78)
 		)
 		(stroke
 			(width 0)
@@ -3658,7 +3658,7 @@
 	)
 	(polyline
 		(pts
-			(xy 203.2 12.7) (xy 203.2 50.8)
+			(xy 203.2 17.78) (xy 203.2 46.99)
 		)
 		(stroke
 			(width 0)
@@ -3718,7 +3718,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 149.86) (xy 203.2 149.86)
+			(xy 177.8 148.59) (xy 203.2 148.59)
 		)
 		(stroke
 			(width 0)
@@ -3748,7 +3748,7 @@
 	)
 	(polyline
 		(pts
-			(xy 203.2 50.8) (xy 279.4 50.8)
+			(xy 203.2 46.99) (xy 279.4 46.99)
 		)
 		(stroke
 			(width 0)
@@ -3768,7 +3768,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 147.32) (xy 250.19 147.32)
+			(xy 237.49 146.05) (xy 250.19 146.05)
 		)
 		(stroke
 			(width 0)
@@ -3808,7 +3808,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 152.4) (xy 203.2 152.4)
+			(xy 190.5 151.13) (xy 203.2 151.13)
 		)
 		(stroke
 			(width 0)
@@ -3898,7 +3898,7 @@
 	)
 	(polyline
 		(pts
-			(xy 203.2 12.7) (xy 279.4 12.7)
+			(xy 203.2 17.78) (xy 279.4 17.78)
 		)
 		(stroke
 			(width 0)
@@ -4068,7 +4068,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 27.94) (xy 260.35 30.48)
+			(xy 260.35 33.02) (xy 260.35 35.56)
 		)
 		(stroke
 			(width 0)
@@ -4138,7 +4138,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 137.16) (xy 203.2 137.16)
+			(xy 177.8 135.89) (xy 203.2 135.89)
 		)
 		(stroke
 			(width 0)
@@ -4148,7 +4148,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 139.7) (xy 203.2 139.7)
+			(xy 177.8 138.43) (xy 203.2 138.43)
 		)
 		(stroke
 			(width 0)
@@ -4238,7 +4238,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 144.78) (xy 250.19 144.78)
+			(xy 237.49 143.51) (xy 250.19 143.51)
 		)
 		(stroke
 			(width 0)
@@ -4248,7 +4248,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 139.7) (xy 250.19 139.7)
+			(xy 237.49 138.43) (xy 250.19 138.43)
 		)
 		(stroke
 			(width 0)
@@ -4288,7 +4288,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 144.78) (xy 203.2 144.78)
+			(xy 177.8 143.51) (xy 203.2 143.51)
 		)
 		(stroke
 			(width 0)
@@ -4298,7 +4298,7 @@
 	)
 	(polyline
 		(pts
-			(xy 279.4 127) (xy 279.4 165.1)
+			(xy 279.4 127) (xy 279.4 160.02)
 		)
 		(stroke
 			(width 0)
@@ -4308,7 +4308,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 142.24) (xy 250.19 142.24)
+			(xy 237.49 140.97) (xy 250.19 140.97)
 		)
 		(stroke
 			(width 0)
@@ -4608,7 +4608,7 @@
 	)
 	(polyline
 		(pts
-			(xy 279.4 165.1) (xy 165.1 165.1)
+			(xy 279.4 160.02) (xy 165.1 160.02)
 		)
 		(stroke
 			(width 0)
@@ -4668,7 +4668,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 137.16) (xy 250.19 137.16)
+			(xy 237.49 135.89) (xy 250.19 135.89)
 		)
 		(stroke
 			(width 0)
@@ -4699,7 +4699,7 @@
 		(uuid "0275a910-91be-4e7b-9bc1-4d30dc8a51d6")
 	)
 	(label "GPIO26"
-		(at 237.49 137.16 0)
+		(at 237.49 135.89 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4710,7 +4710,7 @@
 		(uuid "1537b891-f1f1-4f50-af66-8d46b759c33e")
 	)
 	(label "GPIO35"
-		(at 237.49 147.32 0)
+		(at 237.49 146.05 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4743,7 +4743,7 @@
 		(uuid "3d36ae16-3e65-4860-94ae-2c11ca6d2f8d")
 	)
 	(label "GPIO5{slash}VSPICS0"
-		(at 177.8 137.16 0)
+		(at 177.8 135.89 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4776,7 +4776,7 @@
 		(uuid "4c95858a-da6c-4e28-a454-982dc1b5ebd7")
 	)
 	(label "GPIO25"
-		(at 237.49 139.7 0)
+		(at 237.49 138.43 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4787,7 +4787,7 @@
 		(uuid "55bb6aa2-2f57-49be-b958-f962ab65e14f")
 	)
 	(label "GPIO23{slash}VSPID"
-		(at 177.8 149.86 0)
+		(at 177.8 148.59 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4798,7 +4798,7 @@
 		(uuid "5d04a603-f12f-4a6c-aa76-1d31e7616795")
 	)
 	(label "GPIO34"
-		(at 237.49 149.86 0)
+		(at 237.49 148.59 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4820,7 +4820,7 @@
 		(uuid "6146babf-1c70-4fdc-8dc3-7ba59540b934")
 	)
 	(label "GPIO18{slash}VSPICLK"
-		(at 177.8 139.7 0)
+		(at 177.8 138.43 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4831,7 +4831,7 @@
 		(uuid "7d89a625-aa78-4958-b423-6e87ba06a393")
 	)
 	(label "GPIO36"
-		(at 237.49 154.94 0)
+		(at 237.49 153.67 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4853,7 +4853,7 @@
 		(uuid "8a1db28a-6e51-467b-83aa-c715da737dd9")
 	)
 	(label "GPIO39"
-		(at 237.49 152.4 0)
+		(at 237.49 151.13 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4908,7 +4908,7 @@
 		(uuid "a6b0578d-0631-4e73-9786-cd0ded483e8c")
 	)
 	(label "GPIO19{slash}VSPIQ"
-		(at 177.8 142.24 0)
+		(at 177.8 140.97 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4919,7 +4919,7 @@
 		(uuid "ab31eceb-0365-4001-a457-1a02454b2189")
 	)
 	(label "GPIO21{slash}VSPIHD"
-		(at 177.8 144.78 0)
+		(at 177.8 143.51 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4952,7 +4952,7 @@
 		(uuid "babcb8e8-1193-4b1b-8e01-3fc98b93625e")
 	)
 	(label "GPIO32"
-		(at 237.49 144.78 0)
+		(at 237.49 143.51 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4974,7 +4974,7 @@
 		(uuid "be2da205-6809-4c1d-b5fd-e433cbdca176")
 	)
 	(label "GPIO33"
-		(at 237.49 142.24 0)
+		(at 237.49 140.97 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5007,7 +5007,7 @@
 		(uuid "e3c14611-0e04-4184-b1b6-0d04c07c8a1f")
 	)
 	(label "GPIO22{slash}VSPIWP"
-		(at 177.8 147.32 0)
+		(at 177.8 146.05 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5445,7 +5445,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "143e00b3-3ab3-41e8-80db-806fa98722c7")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR02"
 			(at 134.62 39.37 0)
 			(effects
 				(font
@@ -5495,7 +5495,7 @@
 		(instances
 			(project "esp32-main"
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4"
-					(reference "#PWR03")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -5750,7 +5750,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 260.35 30.48 0)
+		(at 260.35 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5758,8 +5758,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2d20759c-3967-4cad-ab26-8b5b54300ff5")
-		(property "Reference" "#PWR01"
-			(at 260.35 36.83 0)
+		(property "Reference" "#PWR03"
+			(at 260.35 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5768,7 +5768,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 260.35 35.56 0)
+			(at 260.35 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5776,7 +5776,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 260.35 30.48 0)
+			(at 260.35 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5785,7 +5785,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 30.48 0)
+			(at 260.35 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5794,7 +5794,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 260.35 30.48 0)
+			(at 260.35 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5808,7 +5808,7 @@
 		(instances
 			(project "esp32-main"
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4"
-					(reference "#PWR01")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -5937,7 +5937,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 209.55 31.75 0)
+		(at 209.55 36.83 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5946,7 +5946,7 @@
 		(fields_autoplaced yes)
 		(uuid "38d41241-7ecb-4083-b104-c187375e99dc")
 		(property "Reference" "H3"
-			(at 212.09 30.4799 0)
+			(at 212.09 35.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5955,7 +5955,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 212.09 33.0199 0)
+			(at 212.09 38.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5964,7 +5964,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
-			(at 209.55 31.75 0)
+			(at 209.55 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5973,7 +5973,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 209.55 31.75 0)
+			(at 209.55 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5982,7 +5982,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 209.55 31.75 0)
+			(at 209.55 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5991,7 +5991,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 209.55 31.75 0)
+			(at 209.55 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6000,7 +6000,7 @@
 			)
 		)
 		(property "Sim.Library" ""
-			(at 209.55 31.75 0)
+			(at 209.55 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6009,7 +6009,7 @@
 			)
 		)
 		(property "Sim.Name" ""
-			(at 209.55 31.75 0)
+			(at 209.55 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6018,7 +6018,7 @@
 			)
 		)
 		(property "Sim.Params" ""
-			(at 209.55 31.75 0)
+			(at 209.55 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6027,7 +6027,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 209.55 31.75 0)
+			(at 209.55 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6046,7 +6046,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 209.55 25.4 0)
+		(at 209.55 30.48 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -6055,7 +6055,7 @@
 		(fields_autoplaced yes)
 		(uuid "4025175e-8a6b-445a-8c8a-b73180accc5f")
 		(property "Reference" "H1"
-			(at 212.09 24.1299 0)
+			(at 212.09 29.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6064,7 +6064,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 212.09 26.6699 0)
+			(at 212.09 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6073,7 +6073,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
-			(at 209.55 25.4 0)
+			(at 209.55 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6082,7 +6082,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 209.55 25.4 0)
+			(at 209.55 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6091,7 +6091,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 209.55 25.4 0)
+			(at 209.55 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6100,7 +6100,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 209.55 25.4 0)
+			(at 209.55 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6109,7 +6109,7 @@
 			)
 		)
 		(property "Sim.Library" ""
-			(at 209.55 25.4 0)
+			(at 209.55 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6118,7 +6118,7 @@
 			)
 		)
 		(property "Sim.Name" ""
-			(at 209.55 25.4 0)
+			(at 209.55 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6127,7 +6127,7 @@
 			)
 		)
 		(property "Sim.Params" ""
-			(at 209.55 25.4 0)
+			(at 209.55 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6136,7 +6136,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 209.55 25.4 0)
+			(at 209.55 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6377,7 +6377,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 234.95 25.4 0)
+		(at 234.95 30.48 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -6386,7 +6386,7 @@
 		(fields_autoplaced yes)
 		(uuid "54ef50a6-2bf0-4ec7-9e75-09909e35e710")
 		(property "Reference" "H2"
-			(at 237.49 24.1299 0)
+			(at 237.49 29.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6395,7 +6395,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 237.49 26.6699 0)
+			(at 237.49 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6404,7 +6404,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
-			(at 234.95 25.4 0)
+			(at 234.95 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6413,7 +6413,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 234.95 25.4 0)
+			(at 234.95 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6422,7 +6422,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 234.95 25.4 0)
+			(at 234.95 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6431,7 +6431,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 234.95 25.4 0)
+			(at 234.95 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6440,7 +6440,7 @@
 			)
 		)
 		(property "Sim.Library" ""
-			(at 234.95 25.4 0)
+			(at 234.95 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6449,7 +6449,7 @@
 			)
 		)
 		(property "Sim.Name" ""
-			(at 234.95 25.4 0)
+			(at 234.95 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6458,7 +6458,7 @@
 			)
 		)
 		(property "Sim.Params" ""
-			(at 234.95 25.4 0)
+			(at 234.95 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6467,7 +6467,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 234.95 25.4 0)
+			(at 234.95 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6486,7 +6486,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 234.95 31.75 0)
+		(at 234.95 36.83 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -6495,7 +6495,7 @@
 		(fields_autoplaced yes)
 		(uuid "558a8465-632f-4a6b-bd29-d4f375a268ca")
 		(property "Reference" "H4"
-			(at 237.49 30.4799 0)
+			(at 237.49 35.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6504,7 +6504,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 237.49 33.0199 0)
+			(at 237.49 38.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6513,7 +6513,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
-			(at 234.95 31.75 0)
+			(at 234.95 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6522,7 +6522,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 234.95 31.75 0)
+			(at 234.95 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6531,7 +6531,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 234.95 31.75 0)
+			(at 234.95 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6540,7 +6540,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 234.95 31.75 0)
+			(at 234.95 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6549,7 +6549,7 @@
 			)
 		)
 		(property "Sim.Library" ""
-			(at 234.95 31.75 0)
+			(at 234.95 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6558,7 +6558,7 @@
 			)
 		)
 		(property "Sim.Name" ""
-			(at 234.95 31.75 0)
+			(at 234.95 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6567,7 +6567,7 @@
 			)
 		)
 		(property "Sim.Params" ""
-			(at 234.95 31.75 0)
+			(at 234.95 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6576,7 +6576,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 234.95 31.75 0)
+			(at 234.95 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7686,7 +7686,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x08_Socket")
-		(at 208.28 144.78 0)
+		(at 208.28 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7695,7 +7695,7 @@
 		(fields_autoplaced yes)
 		(uuid "7aa4d667-be52-4425-affb-22bbe364faf3")
 		(property "Reference" "J2"
-			(at 209.55 144.7799 0)
+			(at 209.55 143.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7704,7 +7704,7 @@
 			)
 		)
 		(property "Value" "Conn_01x08_Socket"
-			(at 209.55 147.3199 0)
+			(at 209.55 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7713,7 +7713,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MC_1,5_8-G-3.81_1x08_P3.81mm_Horizontal"
-			(at 208.28 144.78 0)
+			(at 208.28 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7722,7 +7722,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 208.28 144.78 0)
+			(at 208.28 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7731,7 +7731,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 208.28 144.78 0)
+			(at 208.28 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7740,7 +7740,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 208.28 144.78 0)
+			(at 208.28 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7749,7 +7749,7 @@
 			)
 		)
 		(property "Sim.Library" ""
-			(at 208.28 144.78 0)
+			(at 208.28 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7758,7 +7758,7 @@
 			)
 		)
 		(property "Sim.Name" ""
-			(at 208.28 144.78 0)
+			(at 208.28 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7767,7 +7767,7 @@
 			)
 		)
 		(property "Sim.Params" ""
-			(at 208.28 144.78 0)
+			(at 208.28 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7776,7 +7776,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 208.28 144.78 0)
+			(at 208.28 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7819,7 +7819,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 260.35 27.94 0)
+		(at 260.35 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7828,7 +7828,7 @@
 		(fields_autoplaced yes)
 		(uuid "84852cfb-c42c-48ca-82af-9789b1e1bc09")
 		(property "Reference" "#FLG01"
-			(at 260.35 26.035 0)
+			(at 260.35 31.115 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7837,7 +7837,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 260.35 22.86 0)
+			(at 260.35 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7845,7 +7845,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 260.35 27.94 0)
+			(at 260.35 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7854,7 +7854,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 260.35 27.94 0)
+			(at 260.35 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7863,7 +7863,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 260.35 27.94 0)
+			(at 260.35 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8362,7 +8362,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x08_Socket")
-		(at 255.27 144.78 0)
+		(at 255.27 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8371,7 +8371,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a030253-6446-4271-8d12-57a86f6a55d8")
 		(property "Reference" "J3"
-			(at 256.54 144.7799 0)
+			(at 256.54 143.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8380,7 +8380,7 @@
 			)
 		)
 		(property "Value" "Conn_01x08_Socket"
-			(at 256.54 147.3199 0)
+			(at 256.54 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8389,7 +8389,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MC_1,5_8-G-3.81_1x08_P3.81mm_Horizontal"
-			(at 255.27 144.78 0)
+			(at 255.27 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8398,7 +8398,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 255.27 144.78 0)
+			(at 255.27 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8407,7 +8407,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 255.27 144.78 0)
+			(at 255.27 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8416,7 +8416,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 255.27 144.78 0)
+			(at 255.27 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8425,7 +8425,7 @@
 			)
 		)
 		(property "Sim.Library" ""
-			(at 255.27 144.78 0)
+			(at 255.27 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8434,7 +8434,7 @@
 			)
 		)
 		(property "Sim.Name" ""
-			(at 255.27 144.78 0)
+			(at 255.27 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8443,7 +8443,7 @@
 			)
 		)
 		(property "Sim.Params" ""
-			(at 255.27 144.78 0)
+			(at 255.27 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8452,7 +8452,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 255.27 144.78 0)
+			(at 255.27 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8503,7 +8503,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ae665954-b3eb-4203-b3b6-b629c359118e")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR01"
 			(at 43.18 39.37 0)
 			(effects
 				(font
@@ -8553,7 +8553,7 @@
 		(instances
 			(project "esp32-main"
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4"
-					(reference "#PWR02")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
