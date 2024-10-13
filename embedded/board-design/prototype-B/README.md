@@ -31,7 +31,7 @@ The absolute maximum load of the main processing unit (ESP32) is $1.1A$. The oth
 
 $$I_L = I_{OUT} * \frac{V_{OUT}}{V_{BAT} * 0.8} = 1.3A * \frac{3.3V}{2.8V * 0.8} = 1.91A $$
 
-$$\Delta I_L = 20\% * I_L = 20\% * 1.91A = 0.382A \approx 0.38A$$
+$$\Delta I_L = I_L / 5 = 1.91A / 5 = 0.382A \approx 0.38A$$
 
 $$ L = \left(\frac{V_{BAT} * (V_{OUT} - V_{BAT})}{\Delta I_L * f * V_{OUT}}\right)  = \left(\frac{2.8V * (3.3V - 2.8V)}{0.4A * 600kHz * 3.3V}\right) = 7.446\mu H \approx 7.45\mu H$$
 
