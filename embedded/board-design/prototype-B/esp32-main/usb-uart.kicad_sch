@@ -2886,7 +2886,7 @@
 		)
 		(uuid "ff7a3fcc-6988-437b-ba38-c475e7319888")
 	)
-	(text "VBUS - 5V MAX!"
+	(text "VBUS - test only"
 		(exclude_from_sim no)
 		(at 124.46 168.91 0)
 		(effects
