@@ -2043,7 +2043,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 90.17) (xy 189.23 90.17)
+			(xy 171.45 90.17) (xy 190.5 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2173,16 +2173,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 90.17) (xy 203.2 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63d612a4-92ef-4ced-8234-73fc6d7b8f90")
-	)
-	(wire
-		(pts
 			(xy 158.75 123.19) (xy 171.45 123.19)
 		)
 		(stroke
@@ -2200,16 +2190,6 @@
 			(type default)
 		)
 		(uuid "675a53a7-0978-4bc8-8745-1a57dad61c55")
-	)
-	(wire
-		(pts
-			(xy 191.77 73.66) (xy 191.77 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69ede7ae-5bdd-4721-a32d-5aac4cb52d25")
 	)
 	(wire
 		(pts
@@ -2463,16 +2443,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 73.66) (xy 203.2 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c75df2cc-8209-4014-8119-864cf67dd61b")
-	)
-	(wire
-		(pts
 			(xy 143.51 110.49) (xy 146.05 110.49)
 		)
 		(stroke
@@ -2523,16 +2493,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 71.12) (xy 189.23 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb3c51ad-b962-4600-8307-eeff3bca3841")
-	)
-	(wire
-		(pts
 			(xy 171.45 100.33) (xy 171.45 90.17)
 		)
 		(stroke
@@ -2550,16 +2510,6 @@
 			(type default)
 		)
 		(uuid "ed726052-342b-4fbd-93a9-961bfd81a972")
-	)
-	(wire
-		(pts
-			(xy 198.12 76.2) (xy 198.12 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eed501e6-e853-45f0-8aa9-1b0a68e3ad3f")
 	)
 	(wire
 		(pts
@@ -2590,26 +2540,6 @@
 			(type default)
 		)
 		(uuid "fa7bb9d3-f148-40f3-a98e-fdf99ab19179")
-	)
-	(wire
-		(pts
-			(xy 203.2 76.2) (xy 198.12 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fbd62028-eeca-4b09-9a5f-405135ef61a6")
-	)
-	(wire
-		(pts
-			(xy 189.23 71.12) (xy 203.2 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd5df20d-298f-470d-a551-32ab1e310335")
 	)
 	(wire
 		(pts
@@ -2677,7 +2607,7 @@
 	)
 	(global_label "VBAT"
 		(shape output)
-		(at 203.2 90.17 0)
+		(at 190.5 90.17 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2687,7 +2617,7 @@
 		)
 		(uuid "a01740b5-c0d5-469b-90e3-2298412b4e04")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 210.6 90.17 0)
+			(at 197.9 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2718,7 +2648,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "05e0772f-c898-4c3a-bbfb-fc0f4ba7cef0")
-		(property "Reference" "D7"
+		(property "Reference" "D9"
 			(at 109.5375 52.07 0)
 			(effects
 				(font
@@ -2824,7 +2754,7 @@
 		(instances
 			(project "esp32-main"
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4/9cfdfa29-fef4-49c3-96a5-094ec94d9453"
-					(reference "D7")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -3067,72 +2997,6 @@
 			(project "esp32-main"
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4/9cfdfa29-fef4-49c3-96a5-094ec94d9453"
 					(reference "R23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 198.12 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "32f7d55b-2b9d-4f40-9fd7-304eb6234f5e")
-		(property "Reference" "#PWR026"
-			(at 198.12 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 198.12 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 198.12 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 198.12 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 198.12 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8006a4f2-f654-48e2-8879-2a61b21c16b0")
-		)
-		(instances
-			(project "esp32-main"
-				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4/9cfdfa29-fef4-49c3-96a5-094ec94d9453"
-					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -3465,7 +3329,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "55a33821-2c21-4cdf-8a91-75732ef558ee")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR026"
 			(at 158.75 132.08 0)
 			(effects
 				(font
@@ -3515,7 +3379,7 @@
 		(instances
 			(project "esp32-main"
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4/9cfdfa29-fef4-49c3-96a5-094ec94d9453"
-					(reference "#PWR027")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -3733,7 +3597,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "720c1ffd-6b8b-4e4a-9199-e199535292e3")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR027"
 			(at 120.65 191.77 0)
 			(effects
 				(font
@@ -3783,7 +3647,7 @@
 		(instances
 			(project "esp32-main"
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4/9cfdfa29-fef4-49c3-96a5-094ec94d9453"
-					(reference "#PWR028")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -3798,7 +3662,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7aa2afd5-cbaf-4d48-ad9b-a13677ca173c")
-		(property "Reference" "D9"
+		(property "Reference" "D11"
 			(at 90.4875 71.12 0)
 			(effects
 				(font
@@ -3904,7 +3768,7 @@
 		(instances
 			(project "esp32-main"
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4/9cfdfa29-fef4-49c3-96a5-094ec94d9453"
-					(reference "D9")
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -3920,7 +3784,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89e6f36b-57e7-4d62-bfa9-32710fcc7fb1")
-		(property "Reference" "#FLG04"
+		(property "Reference" "#FLG06"
 			(at 163.195 58.42 0)
 			(effects
 				(font
@@ -3971,7 +3835,7 @@
 		(instances
 			(project ""
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4/9cfdfa29-fef4-49c3-96a5-094ec94d9453"
-					(reference "#FLG04")
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -4095,78 +3959,6 @@
 			(project "esp32-main"
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4/9cfdfa29-fef4-49c3-96a5-094ec94d9453"
 					(reference "C22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x03_Socket")
-		(at 208.28 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bc5b6350-79a6-4dcf-8645-4d15cd65dc37")
-		(property "Reference" "J7"
-			(at 209.55 72.3899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x03_Socket"
-			(at 209.55 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MC_1,5_3-G-3.81_1x03_P3.81mm_Horizontal"
-			(at 208.28 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 208.28 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 208.28 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "317967da-9869-4eb9-a958-ae853ac9830f")
-		)
-		(pin "2"
-			(uuid "57efe783-2b0e-4fe3-8d87-0b04080ef434")
-		)
-		(pin "3"
-			(uuid "fbaf8245-471b-4846-89fb-ef30712c3a5d")
-		)
-		(instances
-			(project "esp32-main"
-				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4/9cfdfa29-fef4-49c3-96a5-094ec94d9453"
-					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -4743,7 +4535,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fe2b612f-5331-49a4-898b-294d3f601da0")
-		(property "Reference" "D8"
+		(property "Reference" "D10"
 			(at 125.73 74.93 90)
 			(effects
 				(font
@@ -4849,7 +4641,7 @@
 		(instances
 			(project "esp32-main"
 				(path "/6d02e045-d1b3-4320-a4f8-f5e2c734acd4/9cfdfa29-fef4-49c3-96a5-094ec94d9453"
-					(reference "D8")
+					(reference "D10")
 					(unit 1)
 				)
 			)
