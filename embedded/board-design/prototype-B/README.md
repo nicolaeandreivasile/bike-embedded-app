@@ -7,14 +7,16 @@ TODO
 TODO
 
 ## Power supply
-TODO
+$3.3V$ is achieved using the TPS6109x Synchronous Boost Converter. The power regulator has multiple sources and it is programmed to output the desired power specifications of the applications.
 
 ### Sources
-There are 3 main sources that can power the application:
-1. USB
-2. 18650 Li-Ion sincle cell battery
-3. An alternative DC source with $2.8-5.5V$ range
+There are 3 main sources that can power the application listed below from the highest priority to the lowest:
 
+1. USB
+2. An alternative $5V$ DC power source
+3. 18650 Li-Ion sincle cell battery
+
+If a power source is available, all the lower priority ones are suspended. This is available for the battery charging (VBUS and ALT) and power supply modules (VBUS, ALT and VBAT).
 
 ### Programming the output voltage
 The TPS61090 is the adjustable version for the TPS6109x series, therefore, a voltage divider is required at the FB pin. The resistor values are calculated using the below formula, keeping in mind that the desired $V_{OUT} = 3.3V$, $V_{FB} = 0.5V$ and the recommended value of the $R_4$ is less that $500k\Omega$.
@@ -50,4 +52,8 @@ $$ C_{min} = \left(\frac{I_{OUT} * (V_{OUT} - V_{BAT})}{f * \Delta V * V_{OUT}}\
 22&micro;F electrolytic, 10&micro;F ceramic and 220&micro;F tantalum capacitors are placed on the $V_{OUT}$ power signal.
 
 ### Battery management
-TODO
+The application has the ability to charge the battery from USB or an alternative $5V$ DC power source by using the LTC4054-4.2 IC. It feeds $4.2V$ preset voltage. The charging current can be programmed using a resistor and is calculated below.
+
+$$ R_{PROG} = \left(\frac{V_{PROG}}{I_{BAT}} * 1000 \right) = \left(\frac{1V}{0.5A} * 1000 \right) = 2K\Omega $$
+
+$500mA$ is the chosen value for $I_{BAT}$, therefore $R_{PROG} = 2K\Omega$. The charging module also has available a status LED and the cabability to be shut down by an external actuator (ESP32 in this case).
