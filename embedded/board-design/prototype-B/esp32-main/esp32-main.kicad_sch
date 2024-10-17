@@ -4797,6 +4797,16 @@
 		)
 		(uuid "ffbbca9c-d708-4e40-b589-3d3dd4bcb7d1")
 	)
+	(text "low Vf diode needed\n"
+		(exclude_from_sim no)
+		(at 342.9 203.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0fe9c52e-8174-473a-8798-e4e1988e5cda")
+	)
 	(label "GPIO32"
 		(at 190.5 100.33 0)
 		(fields_autoplaced yes)
