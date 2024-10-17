@@ -1,4 +1,4 @@
-25355701398514349
+25360888893245372
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -103004,3 +103004,24 @@ Zigbee_Module_MRF24J40MD
 0
 12
 12
+footprints
+FUSE_SMD030F-2_LTF
+
+SMD050F-2 
+0
+2
+2
+footprints
+FUSE_SMD030F-2_LTF-L
+
+SMD050F-2 
+0
+2
+2
+footprints
+FUSE_SMD030F-2_LTF-M
+
+SMD050F-2 
+0
+2
+2
