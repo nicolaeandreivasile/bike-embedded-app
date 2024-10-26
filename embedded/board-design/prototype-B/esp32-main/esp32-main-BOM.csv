@@ -1,39 +1,44 @@
-Id,Designator,Footprint,Quantity,Designation,Supplier and ref,Obs,Purchase list
-1,"S1,S2",Switch_Tactile_THT_6x6mm,2,1825910-6,Digikey,~,*
-2,C8,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1,1uF/6.3V/20%/C0603,Digikey,CC0603KRX7R7BB105,*
-3,L1,L_10.4x10.4_H4.8,1,CDRH103RNP-2R2NC-B,Digikey,~,*
-4,R15,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,180K/R0603,Digikey,RC0603JR-07180KL,*
-5,"R24,R22,R12,R11,R19",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,5,330R/R0603,Digikey,RC0603JR-07330RL,*
-6,"R16,R13",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2,1M/R0603,Digikey,RC0603FR-071ML,*
-7,"C21,C23,C15,C10,C4,C6",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,6,100nF/6.3V/20%/C0603,Digikey,CC0603KRX7R7BB104,*
-8,"J8,J7","PhoenixContact_MC_1,5_3-G-3.81_1x03_P3.81mm_Horizontal",2,Conn_01x03_Socket,Digikey,~,*
-9,R4,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,0R(board mount),Digikey,RC0603JR-070RL,*
-10,Q4,TSOT-23,1,FMMT720TA,Digikey,~,*
-11,"D8,D3,D6",LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,3,LED(RED),Digikey,150060RS75000,*
-12,"C5,C22,C9",CP_Elec_4x3,3,10uF/16V/20%/4x3mm,Digikey,RFS1A100MCN1GB,*
-13,"R25,R7,R6,R8,R21,R5",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,6,10K/R0603,Digikey,RMCF0603JT10K0,*
-14,U5,TSOT-23-5,1,LTC4054ES5-4.2,Digikey,~,*
-15,J4,USB_Micro_B_Female_0473460001,1,473460001,Digikey,~,*
-16,"J5,J6",PinHeader_1x02_P1.27mm_Vertical,2,Conn_01x02_Socket,Digikey,~,*
-17,"C7,C3,C17,C1,C20,C14",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,6,10uF/6.3V/20%/C0603,Digikey,CC0603MRX5R6BB106,*
-18,C18,CP_EIA-7343-31_Kemet-D_Pad2.25x2.55mm_HandSolder,1,220uF/16V/10%/D/Tantalum,Digikey,T491D227M010AT,*
-19,R20,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,1K/R0603,Digikey,RC0603FR-071KL,*
-20,J1,PinHeader_2x05_P1.27mm_Vertical_SMD,1,Conn_ARM_JTAG_SWD_10,Digikey,GRPB052VWQS-RC,*
-21,U1,ESP32-WROVER-E,1,ESP32-WROVER-E,Digikey,~,*
-22,"R3,R2,R1,R17,R23",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,5,100K/R0603,Digikey,RC0603FR-07100KL,*
-23,F1,Fuse_2920_7451Metric_Pad2.10x5.45mm_HandSolder,1,SMD050F-2,Digikey,~,*
-24,R18,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,380K/R0603,Digikey,RL0603FR-070R39L,* (390k)
-25,U3,SSOP-20_3.9x8.7mm_P0.635mm,1,FT231XS,Digikey,~,*
-26,D2,LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,1,LED(GREEN),Digikey,150060GS75000,*
-27,"Q6,Q3,Q5",SOT-23,3,FDN340P,Digikey,~,*
-28,"R9,R10",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2,27R/R0603,Digikey,RC0603JR-0727RL,*
-29,U4,Texas_RSA_VQFN-16-1EP_4x4mm_P0.65mm_EP2.7x2.7mm_ThermalVias,1,TPS61090,Digikey,~,*
-30,C11,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1,10nF/6.3V/20%/C0603,Digikey,CC0603KRX7R9BB103,*
-31,"D7,D1,D9,D4,D5",D_SOD-323_HandSoldering,5,SMD22WS-TP,Digikey,~,*
-32,"Q1,Q2",SOT-23,2,BC817,Digikey,~,*
-33,U2,SOT-23-5,1,BD48ExxG,Digikey,~,*
-34,"C19,C2,C16",CP_Elec_4x3,3,22uF/16V/20%/4x3mm,Digikey,PCF0J220MCL1GB,*
-35,"J2,J3","PhoenixContact_MC_1,5_8-G-3.81_1x08_P3.81mm_Horizontal",2,Conn_01x08_Socket,Digikey,~,*
-36,BT1,BatteryHolder_Keystone_1042_1x18650,1,18650 Li-Ion Single Cell,Digikey,~,*
-37,R14,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,1.8M/R0603,Digikey,RC0603JR-072ML,* (2M)
-38,"C13,C12",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,2,47pF/6.3V/20%/C0603,Digikey,CC0603JRNPO9BN470,*
+Id,Designator,Footprint,Quantity,Designation,Supplier and ref,Observations,Supplier list,Purchase list
+1,"R4,R27,R5,R23,R8,R3,R2,R1,R10,R11,R9,R6",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,12,10K/R0603,Digikey,RMCF0603JT10K0,*,Previous batch
+2,R28,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,50m/R0603,Digikey,PT0603FR-070R05L,*,*
+3,"S1,S2",Switch_Tactile_THT_6x6mm,2,1825910-6,Digikey,1825910-6,*,Previous batch
+4,"C8,C5,C22,C24",CP_Elec_4x3,4,10uF/16V/20%/4x3mm,Digikey,RFS1A100MCN1GB,*,Previous batch
+5,L1,IND_TAIYO_NRS6010_TAY,1,NRS6010T1R5MMGF,Digikey,NRS6010T1R5MMGF,*,*
+6,R16,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,100R/R0603,Digikey,RC0603FR-07100RL,*,*
+7,R25,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,330R/R0603,Digikey,RC0603JR-07330RL,*,Previous batch
+8,R17,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,1M/R0603,Digikey,RC0603FR-071ML,*,Previous batch
+9,"C21,C25,C9,C23,C4,C16,C13,C6",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,8,100nF/6.3V/20%/C0603,Digikey,CC0603KRX7R7BB104,*,Previous batch
+10,"J8,J6","TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal",2,Conn_01x03_Socket,Digikey,1725669,*,*
+11,"Q4,Q6,Q3,Q7",SOT-23,4,FDN340P,Digikey,FDN340P,*,Previous batch
+12,J4,USB_Micro_B_Female_0473460001,1,473460001,Digikey,473460001,*,Previous batch
+13,"C27,C7",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,2,1uF/6.3V/20%/C0603,Digikey,CC0603KRX7R7BB105,*,Previous batch
+14,"D8,D2,D6",LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,3,LED(RED),Digikey,150060RS75000,*,Previous batch
+15,R26,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,2K/R0603,Digikey,RC0603JR-072KL,*,*
+16,U5,TSOT-23-5,1,LTC4054ES5-4.2,Digikey,LTC4054ES5-4.2#TRMPBF,*,Previous batch
+17,"J5,J7",PinHeader_1x02_P2.54mm_Vertical,2,Conn_01x02_Socket,Digikey,D01-9922046,*,Previous batch
+18,"R13,R12",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2,27R/R0603,Digikey,RC0603JR-0727RL,*,Previous batch
+19,"C18,C2,C14",CP_Elec_4x3,3,22uF/16V/20%/4x3mm,Digikey,PCF0J220MCL1GB,*,Previous batch
+20,"R21,R14,R15",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,3,270R/R0603,Digikey,RC0603JR-07270RL,*,*
+21,"C3,C15,C19,C1",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,4,10uF/6.3V/20%/C0603,Digikey,CC0603MRX5R6BB106,*,Previous batch
+22,D3,LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,1,LED(GREEN),Digikey,150060GS75000,*,Previous batch
+23,U6,DFN-10-1EP_2x3mm_P0.5mm_EP0.64x2.4mm,1,LTC2959,Digikey,LTC2959IDDB#TRMPBF,*,*
+24,J1,PinHeader_2x05_P1.27mm_Vertical_SMD,1,Conn_ARM_JTAG_SWD_10,Digikey,GRPB052VWQS-RC,*,Previous batch
+25,U1,ESP32-WROVER-E,1,ESP32-WROVER-E,Digikey,ESP32-WROVER-E-N16R8,*,Previous batch
+26,"R19,R20,R24",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,3,100K/R0603,Digikey,RC0603FR-07100KL,*,Previous batch
+27,U3,SSOP-20_3.9x8.7mm_P0.635mm,1,FT231XS,Digikey,FT231XS-R,*,Previous batch
+28,"J3,J2","TerminalBlock_Phoenix_MPT-0,5-8-2.54_1x08_P2.54mm_Horizontal",2,Conn_01x08_Socket,Digikey,1725711,*,*
+29,C10,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1,10nF/6.3V/20%/C0603,Digikey,CC0603KRX7R9BB103,*,Previous batch
+30,"C11,C12",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,2,47pF/6.3V/20%/C0603,Digikey,CC0603JRNPO9BN470,*,Previous batch
+31,"D7,D1,D4,D5",D_SOD-128,4,PMEG3020EP,Digikey,"PMEG3020EP,115",*,*
+32,"Q1,Q2",SOT-23,2,BC817,Digikey,"BC817-40,235",*,Previous batch
+33,FB1,805,1,MPZ2012S601AT000,Digikey,MPZ2012S601AT000,*,*
+34,U2,SOT-23-5,1,BD48ExxG,Digikey,BD48E30G-MTR,*,Previous batch
+35,R7,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,0R(board mount),Digikey,RC0603JR-070RL,*,Previous batch
+36,C17,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1,2.2pF/6.3V/20%/C0603,Digikey,CC0603CRNPO9BN2R2,*,*
+37,BT1,BatteryHolder_Keystone_1042_1x18650,1,18650 Li-Ion Single Cell,Digikey,1042P,*,Previous batch
+38,R18,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,180K/R0603,Digikey,RC0603JR-07180KL,*,Previous batch
+39,C26,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1,470nF/6.3V/20%/C0603,Digikey,CC0603KRX5R8BB474,*,*
+40,R22,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,1K/R0603,Digikey,RC0603FR-071KL,*,Previous batch
+41,C20,CP_EIA-7343-31_Kemet-D_Pad2.25x2.55mm_HandSolder,1,220uF/16V/10%/D/Tantalum,Digikey,T491D227M010AT,*,Previous batch
+42,Q5,SOT-23,1,BC807,Digikey,"BC807-40,235",*,*
+43,U4,Texas_DRC0010J_ThermalVias,1,TPS63000,Digikey,TPS63000DRCR,*,*

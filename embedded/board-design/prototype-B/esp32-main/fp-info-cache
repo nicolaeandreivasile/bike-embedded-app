@@ -1,4 +1,4 @@
-25360888893245372
+25357431012086412
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -103005,23 +103005,9 @@ Zigbee_Module_MRF24J40MD
 12
 12
 footprints
-FUSE_SMD030F-2_LTF
+IND_TAIYO_NRS6010_TAY
 
-SMD050F-2 
-0
-2
-2
-footprints
-FUSE_SMD030F-2_LTF-L
-
-SMD050F-2 
-0
-2
-2
-footprints
-FUSE_SMD030F-2_LTF-M
-
-SMD050F-2 
+NRS6010T1R5MMGF 
 0
 2
 2

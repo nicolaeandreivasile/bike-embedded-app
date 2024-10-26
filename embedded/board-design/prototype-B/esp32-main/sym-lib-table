@@ -1,3 +1,4 @@
 (sym_lib_table
   (version 7)
+  (lib (name "2024-10-22_19-12-48")(type "KiCad")(uri "${KIPRJMOD}/esp_main_models/NRS6010T1R5MMGF/2024-10-22_19-12-48.kicad_sym")(options "")(descr ""))
 )

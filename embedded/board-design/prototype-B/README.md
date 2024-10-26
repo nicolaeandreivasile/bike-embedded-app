@@ -11,52 +11,61 @@ The application has the ability to charge the battery from USB or an alternative
 
 $$ R_{PROG} = \left(\frac{V_{PROG}}{I_{BAT}} * 1000 \right) = \left(\frac{1V}{0.5A} * 1000 \right) = 2K\Omega $$
 
-$500mA$ is the chosen value for $I_{BAT}$, therefore $R_{PROG} = 2K\Omega$. The charging module also has available a status LED and the cabability to be shut down by an external actuator (ESP32 in this case).
+$500mA$ is the chosen value for $I_{BAT}$, therefore $R_{PROG} = 2K\Omega$. In addition, the voltage drop across the gas gauge $R_{SENSE}$ is $0.025V$.
 
-The IC can be powered by to sources, ALT and VBUS. A P-MOS, FDN340P, is used to prevent back conducting into VBUS, as well as a Schottky diode, SMD22WS-TP, to prevent USB power loss through the
-100k pull-down resistor. Taking into consideration a $0.3-0.5V$ diode forward voltage, the LTC4054 will have a safe 4.5-5V power supply, well within the operating limits ($4.25-6.5V$).
+The charging module also has available a status LED and the cabability to be shut down by an external actuator (ESP32 in this case).
+
+The IC can be powered by two sources, ALT and VBUS. FDN340P ($20V$, $-2A$ MOSFET-P) is used to prevent back conducting into VBUS, as well as a low $V_F$ diode, PMEG3020EP ($30V$, $2A$ Schottky barrier rectifier), to prevent USB power loss through the
+100k pull-down resistor. Taking into consideration a $0.25-0.3V$ diode forward, the LTC4054 will have a safe 4.7-5V power supply, well within the operating limits ($4.25-6.5V$).
 
 ## Power supply
-$3.3V$ is achieved using the TPS6109x Synchronous Boost Converter. The power regulator has multiple sources and it is programmed to output the desired power specifications of the applications.
+$3.3V$ is achieved using the TPS63000 Buck-Boost converter, ended for systems powered by one-cell Li-ion or Li-polymer battery with
+a typical voltage between $2.3V$ and $4.5V$. The power regulator has multiple sources and it is programmed to output the desired power specifications of the applications.
 
 ### Sources
 There are 3 main sources that can power the application listed below from the highest priority to the lowest:
 
 1. USB
 2. An alternative $5V$ DC power source
-3. 18650 Li-Ion sincle cell battery
+3. 18650 Li-ion sincle cell battery
 
-The power lines VBAT, ALT and VBUS follow a similar back conducting protection circuit to the one described in the previous module. First, the VBAT and ALT sources are depended on an outside rocker switch to give the application the possibility to be turned of when desired. Then, the output is united via another back conducting protection circuit with VBUS to feed the DC/DC converter. We have to take into consideration the diode forward voltage ($0.3-0.5V$) on the ALT and VBUS lines to precisely predict the value of the TPS61090 $V_{BAT}$ ($2.8-4.7V$).
+The power lines VBAT, ALT and VBUS follow a similar back conducting protection circuit to the one described in the previous module. First, the VBAT and ALT sources are depended on an outside rocker switch to give the application the possibility to be turned of when desired. Then, the output is united via another back conducting protection circuit with VBUS to feed the DC/DC converter.
+
+We have to take into consideration the diode forward voltage ($0.25-0.3V$) only on the ALT and VBUS lines (these two are constant $5V$ power lines, therefore we can afford a voltage drop of $0.3V$). The aproximate range of the TPS61090 $V_{BAT}$ in this case is between $2.8V$ and $4.7V$.
 
 ### Programming the output voltage
-The TPS61090 is the adjustable version for the TPS6109x series, therefore, a voltage divider is required at the FB pin. The resistor values are calculated using the below formula, keeping in mind that the desired $V_{OUT} = 3.3V$, $V_{FB} = 0.5V$ and the recommended value of the $R_4$ is less that $500k\Omega$.
+The TPS63000 is the adjustable version for the TPS6300x family, therefore, a voltage divider is required at the FB pin. The resistor values are calculated using the below formula, keeping in mind that the desired $V_{OUT} = 3.3V$, $V_{FB} = 0.5V$ and the recommended value of the $R_2$ is less that $500k\Omega$ (~$200k\Omega$ recommended).
 
-$$R_3 = R_4 * \left(\frac{V_{OUT}}{V_{BAT}} - 1\right) = 180k\Omega * \left(\frac{3.3V}{0.5V} - 1\right) = 1M\Omega$$
+$$R_1 = R_2 * \left(\frac{V_{OUT}}{V_{FB}} - 1\right) = 180k\Omega * \left(\frac{3.3V}{0.5V} - 1\right) = 1M\Omega$$
 
-### Programming the LBI/LBO Threshold Voltage
-For this application we use a 18650 Li-Ion single cell battery. To protect the cell, the voltage should not drop below $2.8V$. We chose the voltage for LBI to be $3V$, giving the battery room of $0.2V$ when raising the indicator. The voltage divider resistor values are calculated as shown below, with $390k\Omega$ as recommended $R_2$ and $0.5V$ for $V_{LBI-thresold}$.
+Using a feedforward capacitor in parallel to R1 is recommended to improve control performance. The value can be calculated using the below formula.
 
-$$R_1 = R_2 * \left(\frac{V_{BAT}}{V_{LBI-thresold}} - 1\right) = 390k\Omega * \left(\frac{3V}{0.5V} - 1\right) = 1.95M\Omega \approx 2M\Omega$$
+$$C_{ff} = \frac{2.2\mu s}{R_1} = \frac{2.2\mu s}{1M\Omega} = 2.2pF$$
 
 ### Inductor Selection
-The absolute maximum load of the main processing unit (ESP32) is $1.1A$. The other $3.3V$ IC, the voltage supervisor, is ultra-low consumption, therefore it is redundant. Nonetheless, we add a safe margin of $0.2A$ for possible auxiliary modules that require a power supply, making $I_L = 1.3A$. We want our application to function in the lower battery ranges without any constraints, therefore we chose the minimal save value for $V_{BAT} = 2.8V$. A maximum 20% current ripple is recommended as well. We calculate the current flowing through the inductor and its value for the harshest power supply conditions below.
+When choosing the inductor, the following requirements need to be taken into consideration: DC resistance, current rating, saturation current, inductance. The peak current of the inductor can be calculated as seen below.
 
-$$I_L = I_{OUT} * \frac{V_{OUT}}{V_{BAT} * 0.8} = 1.3A * \frac{3.3V}{2.8V * 0.8} = 1.915A \approx 1.92A$$
+$$D = \frac{V_{OUT} - V_{IN}}{V_{OUT}} = \frac{3.3V - 2.4V}{3.3V} = 0.2727 \approx 0.273$$
+$$I_{PEAK} = \frac{I_{OUT}}{n * (1 - D)} + \frac{V_{IN} * D}{2 * f * L} = \frac{1A}{0.75 * (1 - 0.273)} + \frac{2.4V * 0.273}{2 * 1500kHz * 1.5\mu H} = 1.9796A \approx 1.98A$$
 
-$$\Delta I_L = I_L / 5 = 1.92A / 5 = 0.384A \approx 0.38A$$
+The calculations are performed using the plotted graphs from the datasheet for a typical $V_{IN} = 2.4V$, $V_{OUT} = 3.3V$, and a $I_{OUT} = 1A$.
 
-$$ L = \left(\frac{V_{BAT} * (V_{OUT} - V_{BAT})}{\Delta I_L * f * V_{OUT}}\right)  = \left(\frac{2.8V * (3.3V - 2.8V)}{0.38A * 600kHz * 3.3V}\right) = 7.442\mu H \approx 7.44\mu H$$
-
-A $8.2\mu F$ inductor is chosen for this aplication.
+An inductor with a saturation current higher with at least 20% than the $I_{PEAK}$ is desired, preferably with low DC resistance, therefore NRS6010T1R5MMGF, with $1.5\mu F$, part is selected.
 
 ### Capacitor Selection
 
 #### Input capacitor
-At least a 10-&micro;F input capacitor is recommended. To minimize EMI behavior, 22&micro;F electrolytic, 10&micro;F and 0.1&micro;F ceramic capacitors are placed near the input supply pin.
+At least a $4.7\mu F$ input capacitor is recommended. To minimize EMI behavior, 22&micro;F electrolytic, 10&micro;F and 0.1&micro;F ceramic capacitors are placed near the input supply pin.
+
+In addition, a RC filter is recommended for VINA, EN and PS/SYNC pins with $R=100\Omega$ and $C=0.1\mu F$. We can calculate the low-pass filter cut-off frequency as seen below.
+
+$$f_C = \frac{1}{2\pi RC} = \frac{1}{2\pi * 100\Omega * 0.1\mu F} = 15.915kHz \approx 16kHz$$
+
+
 
 #### Output capacitor
-A maximum allowed output voltage ripple is less than 1% of $V_{OUT}$, therefore, we compute the minimum output capacitor value as shown below.
+There is no upper limit for the output capacitance value, although $15\mu F$ is recommended for standard applications. Larger capacitors causes lower output voltage ripple as well as lower output voltage drop during load transients. 22&micro;F electrolytic, 10&micro;F ceramic and 220&micro;F tantalum capacitors are placed on the $V_{OUT}$ power signal.
 
-$$ C_{min} = \left(\frac{I_{OUT} * (V_{OUT} - V_{BAT})}{f * \Delta V * V_{OUT}}\right) = \left(\frac{1.3A * (3.3V - 2.8V)}{600kHz * 10mV * 3.3V}\right) = 32.8\mu F \approx 33\mu F$$
+### Power LED
 
-22&micro;F electrolytic, 10&micro;F ceramic and 220&micro;F tantalum capacitors are placed on the $V_{OUT}$ power signal.
+A status LED is placed as well. It can be turned off by the ESP32 using the BC807 PNP transistor.
