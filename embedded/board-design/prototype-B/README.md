@@ -115,15 +115,33 @@ For more information about the general purpose parts used in this implementation
 # Issues
 
 ## Main processing unit
-Strapping pins overlay with the JTAG pins pulled to $3.3V$ by $10\Omega$ resistors, therefore it cannot flash applications correctly via UART. Alternative needed where it can saefly sustain both features (switches, jumpers, etc.).
+Strapping pins overlay with JTAG pins pulled to $3.3V$ by $10\Omega$ resistors, therefore it cannot flash applications correctly via UART (GPIO12 and other strapping pins require to be pulled to GND). 
+GPIO2 should be added to auto-program logic as it controls the internal LDO (VDD_SDIO) voltage.
+Tasks:
+* [ ] Introduce switches/jumpers to be able to configure the common pins
+* [ ] Add GPIO2 to the auto-program circuit to imitate GPIO0 implementation.
+
 
 ## USB-to-UART converter
-Switch LED colors for transmit/receive data. Currently, red is for receiving data to the board and green for transmiting data from the board.
+Currently, red is for receiving data from host to board and green for transmiting data from board to host.
+Tasks:
+* [ ] Switch LED colors for transmit/receive data. 
+
 
 ## Battery management
-18650 battery holder too big for current battery cell. perhaps other alternatives are in place.
-Battery charger needs rework (current program part).
+18650 battery holder too big for current battery cell. Currently the Keystone 1024P is mounted (polarized holder).
+Battery charger needs rework (current program part). FDN340 P-MOSFET body diode forward voltage messes up the programmign of the charging current.
+Tasks:
+* [ ] The requirement is the Keystone 1024 (leaf springs).
+* [ ] Switch the P-MOSFET from the charging current programming logic with a N-MOSFET (FDN335N perhaps) transistor for low-side switching.
+* [ ] Erase the ALT alternative power source for the next revision.
+
 
 ## Power supply
-Protection diodes to be added to the cicuit. Observed that when voltage is decreasing, $2.5V$ is the minimum threshold the regulator can sustain, while when increasing the voltage, it comes back to normal at around $3.4V$. To be investigated further.
+Observed that when voltage is decreasing, $2.5V$ is the minimum threshold the regulator can sustain, while when increasing the voltage, it comes back to normal at around $3.4V$. To be investigated further.
 FDN340P has $0.7V$ diode voltage drop at around $0.5A I_S$, therefore an alternative is required (impacts battery charge current programming and power input lines).
+Tasks:
+* [ ] Erase the ALT alternative source for the next revision.
+* [ ] Protection (TVS/Zenner) diodes to be added to the cicuit. 
+* [ ] Switch PNP (BC807) to high-side placememnt of the power LED.
+* [ ] Rethink the input power source for the DC-DC converter. Alternatives to be considered (power switches, etc.).
