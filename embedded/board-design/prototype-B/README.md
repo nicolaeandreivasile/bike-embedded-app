@@ -35,7 +35,8 @@ A voltage supervisor is also added for undervoltage protection. The BD48E30G-M I
 
 
 ## USB-to-UART converter
-TODO
+The FT231XS-R is used as the IC for this module. It is a USB-2.0 to serial UART interface with full modem control and it is required in this instance to provide the means for flashing embedded applications over UART using Arduino IDE/ESP-IDF framework. It follows the USB powered application recommendations with a micro-B USB connector. In addition, 2 status LEDs are placed for receiving/transmitting data. For more information about the IC, please take a look at the official documentation:
+* [FT231X (USB to FULL HANDSHAKE UART IC)](https://ftdichip.com/wp-content/uploads/2021/10/DS_FT231X.pdf) 
 
 
 ## Battery management
@@ -130,11 +131,11 @@ Tasks:
 
 
 ## Battery management
-18650 battery holder too big for current battery cell. Currently the Keystone 1024P is mounted (polarized holder).
+18650 battery holder is too big for current battery cell. Currently the Keystone 1024P is mounted (polarized holder).
 Battery charger needs rework (current program part). FDN340 P-MOSFET body diode forward voltage messes up the programmign of the charging current.
 
 Tasks:
-* [ ] The requirement is the Keystone 1024 (leaf springs).
+* [ ] Replace the current holder (Keystone 1024P) with Keystone 1024 (leaf springs).
 * [ ] Switch the P-MOSFET from the charging current programming logic with a N-MOSFET (FDN335N perhaps) transistor for low-side switching.
 * [ ] Erase the ALT alternative power source for the next revision.
 
