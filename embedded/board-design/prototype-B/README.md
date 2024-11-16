@@ -110,13 +110,14 @@ A status LED is placed as well. It can be turned off by the ESP32 using the BC80
 
 For more information about the general purpose parts used in this implementation, please refer to each individual datasheets:
 
-* []()
+* [TBD]()
 
 # Issues
 
 ## Main processing unit
 Strapping pins overlay with JTAG pins pulled to $3.3V$ by $10\Omega$ resistors, therefore it cannot flash applications correctly via UART (GPIO12 and other strapping pins require to be pulled to GND). 
 GPIO2 should be added to auto-program logic as it controls the internal LDO (VDD_SDIO) voltage.
+
 Tasks:
 * [ ] Introduce switches/jumpers to be able to configure the common pins
 * [ ] Add GPIO2 to the auto-program circuit to imitate GPIO0 implementation.
@@ -131,6 +132,7 @@ Tasks:
 ## Battery management
 18650 battery holder too big for current battery cell. Currently the Keystone 1024P is mounted (polarized holder).
 Battery charger needs rework (current program part). FDN340 P-MOSFET body diode forward voltage messes up the programmign of the charging current.
+
 Tasks:
 * [ ] The requirement is the Keystone 1024 (leaf springs).
 * [ ] Switch the P-MOSFET from the charging current programming logic with a N-MOSFET (FDN335N perhaps) transistor for low-side switching.
@@ -140,6 +142,7 @@ Tasks:
 ## Power supply
 Observed that when voltage is decreasing, $2.5V$ is the minimum threshold the regulator can sustain, while when increasing the voltage, it comes back to normal at around $3.4V$. To be investigated further.
 FDN340P has $0.7V$ diode voltage drop at around $0.5A I_S$, therefore an alternative is required (impacts battery charge current programming and power input lines).
+
 Tasks:
 * [ ] Erase the ALT alternative source for the next revision.
 * [ ] Protection (TVS/Zenner) diodes to be added to the cicuit. 
