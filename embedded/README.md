@@ -18,17 +18,6 @@ The chosen PCB manufacturer for board creation is PCBWay. Required manufacturing
 2. [PCBWay Capabilities](https://www.pcbway.com/capabilities.html)
 3. [PCBWay How to generate gerber files](https://www.pcbway.com/helpcenter/generate_gerber/Generate_Gerber_file_from_Kicad.html)
 
-
-## prototype-A
-
-### Reworks
-1. No 3V3 or GND signal output from the board to provide power lines to auxiliary modules (sensors, etc.). 
-2. Missing silkscreen information for test pins (ALT, 5V, 3V3, etc.)
-3. No powerr switch on the battery line. In this case, the application stays on the entire time without the option of powering it off.
-4. Change TPS61090 input inductor. Wrong calculation, huge ripple current through the inductor with the current one ($2.2\mu H$). New computed value for a maximum load of $1.3A$ at $3.3V$ is $8.6\mu H$. Please see board-design/prototype-B/README.md.
-5. The JTAG should power the board when debugging the application. Current configuration connects JTAG $V_{REF}$ directly to 3V3 without any considerations
-
-
 ## Software development
 ### Description
 For validating the hardware design of the board, several tests need to be implemented, flashed and executed on the board. The embedded software tests are developed using Arduino 1.8.19 and Espressif's ESP-IDF framework. The same tools are used for creating final embedded appliactions for the board.
